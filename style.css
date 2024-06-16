@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+:root{
+    --span-color: #C5C3C3;
+    --bg-color: #fff;
+    --bg-banner: #ebebeb;
+}
+
+main{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+}
+
+.bannerArea{
+    background-color: var(--bg-banner);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 60%;
+}
+
+.loginArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 0 100px 0;
+}
+
+/*Header*/
+
+.header{
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h2{
+    color: #4C4C4C;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.header h2 span{
+    color: #EB1118;
+    font-weight: 500;
+}
+
+.loginIntructions{
+    color: #c2bdbd;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+/*Login fields*/
+
+.loginFields{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: 80%;
+}
+
+.loginFields img{
+    width: 18px;
+}
+
+.loginFields a{
+    text-align: right;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: #4C4C4C;
+    font-weight: 500;
+}
+
+.emailField, .passwordField{
+    padding-left: 35px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid var(--bg-banner);
+    background-color: var(--bg-banner);
+    margin-bottom: 30px;
+}
+
+.emailField:focus, .passwordField:focus {
+    padding-left: 35px;
+    border: 1px solid #EB1118;
+    background-color: #fff;
+    outline: none;
+}
+
+.acess{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.acess button{
+    color: #fff;
+    background-color: #EB1118;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+
+.acess span{
+    text-align: center;
+    color: var(--span-color);
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.acess span a{
+    color: #EB1118;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.terms{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    bottom: 0;
+    padding-bottom: 40px;
+}
+
+.terms a{
+    color: #4C4C4C;
+    text-decoration: none;
+}
+
+.emailFieldDiv, .passwordFieldDiv{
+    position: relative;
+    width: 100%;
+}
+
+.userImg, .passwordImg{
+    position: absolute;
+    left: 0.8rem;
+    top: calc(29% - 0.5rem);
+}
+
+.passwordEyeImg{
+    position: absolute;
+    right: 0.8rem;
+    top: calc(30% - 0.5rem);
+}
+
+.emailFieldDiv input, .passwordFieldDiv input{
+    width: 100%;
+}
